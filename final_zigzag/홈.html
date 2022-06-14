@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<title>final</title>
+</head>
+<style>
+    .logo{
+        float: left;
+        margin-top: 40px;
+    }
+    .icon
+    { float: left;
+        margin-left: 785px;
+        margin-right: 42px;
+        width:35px;
+        margin-top: 40px;
+    }
+    .icon2
+    {float: left;
+        margin-left: 20px;
+        width:35px;
+        margin-top: 40px;
+    }
+    .box
+    {
+        width: 100%;
+        height: 100px;
+    }
+    .navigation{
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 8px;}
+
+    .navigation a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #171717;
+    font-size: 16px;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+    .navigation2{
+        text-align: left;
+        margin-bottom: 20px;
+
+    }
+    .navigation2 a{
+        display:inline-block;
+    text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding:10px 20px;
+        border: #c5c5c5 solid 1px;
+        border-radius: 50px;
+        color: #c5c5c5;
+        background-color: white;}
+        
+
+    #crrentpage{
+    color:#ff40b3;
+}
+    #crrentpage2{
+        color:white;
+        border: #ff40b3 solid 1px;
+        background-color: #ff40b3;
+    }
+
+.section input[id*="slide"]{
+    display: none;
+}
+.section .slide{
+    max-width: 1200px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.section .slidelist{
+    white-space: nowrap;
+
+}
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all, 1.5s;
+}
+.section .slidelist > li >a{
+    display: block;
+    position: relative;
+}
+.section .slidelist label{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.section .slidelist .left{
+    left: 0px;
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271220.png) center center/ 50% no-repeat;}
+
+.section .slidelist .right {
+    right:70px;
+    background: url(https://cdn-icons-png.flaticon.com/512/271/271228.png?w=360) center center/ 50% no-repeat;
+    }
+
+.section [id="slide01"]:checked ~ .slide .slidelist > li {transform:translateX(0%)}
+.section [id="slide02"]:checked ~ .slide .slidelist > li {transform:translateX(-100%)}
+.section [id="slide03"]:checked ~ .slide .slidelist > li {transform:translateX(-200%)}
+
+.option
+{   line-height: 24px;
+    margin: 0px 10px; 
+    float:left;
+    margin-bottom: 40px;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.option2{
+    line-height: 24px;
+    margin: 0px 10px; 
+    float:left;
+    margin-bottom: 40px;
+    width: 165px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.op_box{
+    padding-left: 20%;
+    padding-right: 20%;
+    display: inline-block;
+}
+.op_box2{
+    padding: 24px 100px;
+    height: 280px;
+}
+.border{
+    border: 1px solid #c5c5c5;
+}
+.op_alpha{
+    display: inline-flex;
+    line-height: 24px;
+    padding: 10px;
+    margin: 0px; 
+    width: 300px;
+    height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.a {
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.a:hover img {
+  transform: scale(1.1);
+}
+
+.bn{
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 160px;
+}
+.info_box{height: 300px;
+    background-color: #c5c5c5;
+    padding-top: 100px;
+}
+.info{ 
+    display: inline-block;
+    font-size: 12px;
+    color: #767676;
+}
+
+</style>
+<body>
+
+    <div class="op_box">
+    <div class="box">
+
+        <div class="logo">
+            <a href="home.html"><img src="https://i.postimg.cc/g01Wq3T4/image.png" width="105" , height="37" alt="zigzag_logo"></a>
+        </div>
+        <div class="icon">
+<span class="material-icons" style="font-size: 35px;">
+                search
+                </span>
+
+        </div>
+       
+        <div class="icon2">
+            <span class="material-icons"style="font-size: 35px;">
+                favorite_border
+                </span>
+        </div>
+
+        <div class="icon2">
+            <span class="material-icons"style="font-size: 35px;">
+                storefront
+                </span>
+        </div>
+
+        <div class="icon2">
+            <span class="material-icons"style="font-size: 35px;">
+                perm_identity
+                </span>
+        </div>
+</div>
+</div>
+  <div class="navigation">
+        <a id="crrentpage" href="home.html">홈</a>
+        <a href="#">카테고리</a>
+        <a href="하루배송.html">하루배송</a>
+        <a href="#">혜택존</a>
+        <a href="#">베스트</a>
+        <a href="#">신상</a>
+        <a href="#">특가</a>
+        <a href="#">스토어</a>
+
+    </div>
+
+    <div class="section">
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02">
+    <input type="radio" name="slide" id="slide03">
+
+    <div class="slide">
+        <ul class="slidelist">
+            <li><a><label for="slide03" class="left"></label>
+                <img src="https://image.brandi.me/home/banner/bannerImage_773294_1654772652.jpg">
+                   <label for="slide02" class="right"></label>
+            </a></li>
+
+            <li><a><label for="slide01" class="left"></label>
+                <img src="https://image.brandi.me/home/banner/bannerImage_773297_1654772654.jpg">
+                   <label for="slide03" class="right"></label>
+            </a></li>
+
+            <li><a><label for="slide02" class="left"></label>
+                <img src="https://image.brandi.me/home/banner/bannerImage_773294_1654772652.jpg">
+                   <label for="slide01" class="right"></label>
+            </a></li>
+        </ul>
+</div>
+
+
+<div class="op_box">
+
+<h1 style="font-size: 32px; margin-top:120px; margin-bottom:40px;">
+    <span style=color:#646ae3>직진배송</span> 무료배송, 빠른 도착</h1>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/52Vzh1Lq/1.jpg" width="100%" alt="op1">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">미니포에</span><br>
+            [MADE] 탄탄핏 세미 크롭 티셔츠<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">29%</span>  <span style=" font-size: 16px;">10,000원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/ZR2BVhJN/2.jpg" width="100%" alt="op2">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">미니포에</span><br>
+            [1만장돌파/6color] 드리이한 쿨링, 플리츠 와플 블라우스<br>
+            <b>  <span style=" font-size: 16px;">19,800원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/pXDhY749/3.jpg" width="100%" alt="op3">
+        </div> 
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">리얼코코</span><br>
+            [[모달ver./30수ver.추가] 코튼 스판 베이직 슬랙스<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">16%</span> <span style=" font-size: 16px;">23,500원</b></span>
+        </p>
+    </div>
+    
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/TPPKxPwm/4.jpg" width="100%" alt="op4">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">데일리쥬</span><br>
+            [MADE] 보일 나일론 볼레로 가디건 - 4color<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">27%</span> <span style=" font-size: 16px;">27,300원</b></span>
+        </p>
+    </div>
+    
+    
+</div>
+
+<div class="op_box">
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/sfWvsqVn/5.jpg" width="100%" alt="op1">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">프렌치오브</span><br>
+            마카롱 여름 파스텔 퍼프 루즈핏 반팔 셔츠 블라우스(6color)_프렌치오브<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span>  <span style=" font-size: 16px;">22,930원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/PJKGddNp/6.jpg" width="100%" alt="op2">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">슈가파우더</span><br>
+            [백화점 린넨!/자켓구매] 썸머 셋업, 린넨 오버핏 자켓/투피스_슈가파우더<br>
+            <b>  <span style=" font-size: 16px;">46,170원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/W36C7sGW/7.jpg" width="100%" alt="op3">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">얼그레이</span><br>
+            [쿠폰]~2XL[키작녀,보통녀,키큰녀/기장선택] 허리밴딩 세미부츠컷 블랙진_얼그레이
+            <br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">16%</span> <span style=" font-size: 16px;">24,930원</b></span>
+        </p>
+    </div>
+    
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/CKCm3mRd/8.jpg" width="100%" alt="op4">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">비트윈</span><br>
+            생지 일자 롱 와이드 데님(진청)_비트윈<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span> <span style=" font-size: 16px;">28,440원</b></span>
+        </p>
+    </div>
+</div>
+
+
+<div class="op_box">
+    <h1 style="font-size: 32px; margin-top:120px; margin-bottom:40px;">
+        최근 본 상품과 비슷해요!</h1>
+
+    <div class="op_alpha">
+    <img src="https://i.postimg.cc/s2ZS8zms/1.png" alt="자주본상품">
+    <img style="margin-right: 10px;">
+    <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">반야드</span><br>
+        (끈조절가능)하이 뷔스티에 여름 나시원피스(5color)_빈야드<br>
+        <b> <span style="color: #ff40b3; font-size: 16px;">10%</span>  <span style=" font-size: 16px;">19,330원</b></span>
+    </p>
+    </div>
+
+<div class="border">  
+<div class=" op_box2 ">
+    
+    <div class="option2">
+        <div class="a">
+        <img src="https://i.postimg.cc/26cJt2th/20.jpg" width="100%" alt="op1">
+    </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">프렌치오브</span><br>
+            뷔스티에 트임 롱 원피스 H라인 레이어드 봄<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span>  <span style=" font-size: 16px;">39,000원</b></span>
+        </p>
+    </div>
+
+    <div class="option2">
+        <div class="a">
+        <img src="https://i.postimg.cc/SN20Bbks/19.jpg" width="100%" alt="op2">
+    </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">미도마켓</span><br>
+            [1만장돌파/6color] 드리이한 쿨링, 플리츠 와플 블라우스<br>
+            <b>  <span style=" font-size: 16px;">67,800원</b></span>
+        </p>
+    </div>
+
+    <div class="option2">
+        <div class="a">
+        <img src="https://i.postimg.cc/GtpR84WJ/18.jpg" width="100%" alt="op3">
+    </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">리얼코코</span><br>
+            (2c) 뒷리본 스퀘어넥 캉캉 미디원피스<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">16%</span> <span style=" font-size: 16px;">26,900원</b></span>
+        </p>
+    </div>
+    
+    <div class="option2">
+        <div class="a">
+        <img src="https://i.postimg.cc/tg09SC6p/17.jpg" width="100%" alt="op4">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">데일리쥬</span><br>
+            [해외]여름 블랙 원피스 반팔 퍼프소매 옆트임 미니 - 4color<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">27%</span> <span style=" font-size: 16px;">29,200원</b></span>
+        </p>
+    </div>
+    <div class="option2">
+        <div class="a">
+        <img src="https://i.postimg.cc/gcyL3Qfx/16.jpg" width="100%" alt="op4">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">러브모노</span><br>
+            [쿠폰][4col] 찐추천♥ 밴딩 볼륨 크롭 오프 블라우스 _ 러브모노<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span> <span style=" font-size: 16px;">19,530원</b></span>
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="bn">
+    <img src="https://image.brandi.me/home/banner/bannerImage_774257_1654843959.jpg" width="545px" alt="광고배너">
+    <img style="margin-right: 24px;">
+    <img src="https://image.brandi.me/home/banner/bannerImage_772074_1654653836.jpg" width="545px" alt="광고배너2">
+</div>
+</div>
+
+
+<div class="op_box">
+<h1 style="font-size: 32px; margin-top:120px; margin-bottom:40px;">
+    TODAY 카테고리 베스트</h1>
+</div>
+    
+    <div class="op_box">
+        <div class="navigation2">
+            <a id="crrentpage2" href="#">전체</a>
+            <a href="#">브랜드</a>
+            <a href="#">트렌드</a>
+            <a href="#">뷰티</a>
+            <a href="#">라이프</a>
+        </div>
+    </div>
+
+  <div class="op_box">  
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/cCCh8WX8/9.jpg" width="100%" alt="op1">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">서링마켓</span><br>
+            (4col) 고급스러운 언발넥 리본 퍼프 블라우스_서링마켓<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span>  <span style=" font-size: 16px;">31,950원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/YCY3Fbf8/10.jpg" width="100%" alt="op2">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">드까</span><br>
+            데이지 스모크 탑나시_드까_2<br>
+            <b>  <span style=" font-size: 16px;">33,660원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/HnFwcyrf/11.jpg" width="100%" alt="op3">
+        </div> 
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">러브모노</span><br>
+            [쿠폰][3col] 원단탄탄 포켓 퍼프 반팔 셔츠 블라우스 _ 러브모노<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">16%</span> <span style=" font-size: 16px;">23,500원</b></span>
+        </p>
+    </div>
+    
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/BbPD0nmN/12.jpg" width="100%" alt="op4">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">더모닌</span><br>
+            [S-XL] 스카 하이웨스트 와이드 롱 코튼 팬츠 2color_더모닌<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span> <span style=" font-size: 16px;">31,950원</b></span>
+        </p>
+    </div>
+    
+    
+</div>
+
+<div class="op_box">
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/65dc2Mhc/13.jpg" width="100%" alt="op1">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">인더모어</span><br>
+            [이쁨보장]스트라이프 뒷리본 카라 반팔 셔츠 원피스 (2color)_인더모어<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">10%</span>  <span style=" font-size: 16px;">24,930원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/d1bRDCkg/14.jpg" width="100%" alt="op2">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">드미엘</span><br>
+            [완전하이/쿨링소재] 망고 하이웨스트 밴딩 핀턱 와이드 트레이닝 팬츠 4color 냉장고바지_드미엘<br>
+            <b>  <span style=" font-size: 16px;">28,440원</b></span>
+        </p>
+    </div>
+
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/dVVCs6NL/15.jpg" width="100%" alt="op3">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">유라타임</span><br>
+            필드 골지 반팔 카라 니트_유라타임<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">16%</span> <span style=" font-size: 16px;">21,330원</b></span>
+        </p>
+    </div>
+    
+    <div class="option">
+        <div class="a">
+        <img src="https://i.postimg.cc/gcyL3Qfx/16.jpg" width="100%" alt="op4">
+        </div>
+        <p style="color:#171717; font-size: 12px; "><span style="color: #c5c5c5; ">러브모노</span><br>
+            [쿠폰][4col] 찐추천♥ 밴딩 볼륨 크롭 오프 블라우스<br>
+            <b> <span style="color: #ff40b3; font-size: 16px;">27%</span> <span style=" font-size: 16px;">19,530원</b></span>
+        </p>
+    </div>
+
+</div>
+<div class="info_box">
+    <div class="op_box">
+    <div class="info">
+        <p>
+        <span style="font-size: 16px; font-weight: bold;">(주) 지그재그</span>
+
+        <br><br>대표이사: 윤거성 사업자 등록번호: 220-88-93187   통신 판매업신고 : 2016-서울강남 -00359
+       <br>호스팅사업자 : (주) 지그재그   주소 : 서울 강남구 태헤란로 18길 12 (역삼동)
+    <br>개인정보관리책임자 : 주현주
+     <br>지그재그는 통신 판매중개자로서 톤신판매 당사자가 아니며, 판매자가 등록한 상품 정보 및 거래에 지그재그는 책임을 지지 않습니다.
+<br><br>
+안전 거래센터 신고하기
+</p>
+    </div>
+    <div class="info">
+
+        <span style="font-size: 16px; font-weight: bold;">고객센터 1566-6675</span>
+
+        <br><br>영업시간   AM 10:00~PM 17:00 [주말 및 공후일 휴무)
+        <br>점심시간   PM 12:30~ PM 13:30
+        <br>고객문의   zigzag@zigzag.co.kr
+    </p>
+    </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
